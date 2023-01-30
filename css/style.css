@@ -82,7 +82,7 @@ body {
     height: 427px;
     position: relative;
     left: 12rem;
-    top: -12rem;
+    top: -25rem;
   }
 
   h1 {
@@ -98,18 +98,15 @@ body {
 
   h2 {
     color: #fff;
+    position: relative;
+    bottom: 200px;
   }
 
   .lower {
-    display: block;
+    position: relative;
+    bottom: 5rem;
     font-size: 15rem;
-    margin-top: -80px;
-  }
-
-  .line {
-    height: 2px;
-    width: 25rem;
-    margin-top: -90px;
-    border-bottom: 2px solid #fff;
-    font-size: 1px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
   }
