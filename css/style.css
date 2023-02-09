@@ -151,7 +151,7 @@ body {
     padding: 1rem;
   }
 
-  .box {
+  .card {
     width: 300px;
     height: auto;
     background-color: #2e2e2e;
@@ -165,12 +165,12 @@ body {
     box-shadow: 0 0 10px 2px #2e2e2e;
   }
 
-  .box > img {
+  .card > img {
     width: 100%;
     height: auto;
   }
 
-  .box > p {
+  .card > p {
     text-align: center;
     padding: 0 5px 0 5px;
     font-size: 0.8rem;
