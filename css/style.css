@@ -79,20 +79,31 @@ body {
     rotate: 20deg;
   }
 
-  #container {
+  section {
+    min-height: 50vh;
     width: 100%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sec-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem auto 2rem auto;
+    position: relative;
+  }
+
+  #sec-2 {
+    display: flex;
+    flex-direction: column;
   }
 
   .rocketLine {
     width: auto;
     height: 427px;
     position: relative;
-    left: 12rem;
+    left: 13.5rem;
     top: -25rem;
   }
 
@@ -130,13 +141,8 @@ body {
     text-underline-offset: 10px;
   }
 
-  .prog {
-    display: flex;
-    flex-direction: column;
-  }
-
   .screenshot {
-    width: 100%;
+    width: 50%;
   }
 
   footer {
@@ -176,7 +182,7 @@ body {
     font-size: 0.8rem;
   }
 
-  .button {
+  button {
     width: 80px;
     height: auto;
     background-color: #3280da;
@@ -186,10 +192,57 @@ body {
     padding: 5px;
   }
 
-  .button:hover {
+  button:hover {
     background-color: yellow;
   }
 
-  .button > a {
+  button > a {
     text-decoration: none;
+  }
+
+  /* === scroll down button === */
+
+  .down {
+    height: 50px;
+    width: 30px;
+    border: 3px solid #fff;
+    position: absolute;
+    bottom: 200px;
+    border-radius: 20px;
+    cursor: crosshair;
+  }
+
+  .down::before,
+  .down::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #fff;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: down 1s ease-in-out infinite;
+  }
+
+  .down::after {
+    top: 30%;
+  }
+
+  @keyframes down {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top: 90%;
+    }
   }
