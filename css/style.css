@@ -194,6 +194,53 @@ h3 {
     width: 50%;
  }
 
+  /* === scroll down button === */
+
+  .down {
+    height: 50px;
+    width: 30px;
+    border: 3px solid #fff;
+    position: absolute;
+    bottom: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.down::before,
+.down::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #fff;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: down 1s ease-in-out infinite;
+}
+
+.down::after {
+    top: 30%;
+}
+
+@keyframes down {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      top: 90%;
+  }
+}
+
 footer {
     width: 100%;
     height: auto;
@@ -247,51 +294,4 @@ button:hover {
 
 button > a {
     text-decoration: none;
-}
-
-  /* === scroll down button === */
-
-.down {
-    height: 50px;
-    width: 30px;
-    border: 3px solid #fff;
-    position: absolute;
-    bottom: 200px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.down::before,
-.down::after {
-    content: '';
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    border: 2px solid #fff;
-    height: 10px;
-    width: 10px;
-    transform: translate(-50%, -50%) rotate(45deg);
-    border-top: transparent;
-    border-left: transparent;
-    animation: down 1s ease-in-out infinite;
-}
-
-.down::after {
-    top: 30%;
-}
-
-@keyframes down {
-    0% {
-      opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    60% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      top: 90%;
-  }
 }
