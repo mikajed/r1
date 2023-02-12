@@ -15,9 +15,9 @@ body {
     background-image: url('../images/bg1.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
-  }
+}
 
-  .header-nav {
+.header-nav {
     width: 100%;
     height: 70px;
     backdrop-filter: blur(10px);
@@ -25,95 +25,96 @@ body {
     font-size: 1.1rem;
     position: fixed;
     z-index: 1;
-  }
+}
   
-  .header-nav > a > img {
+.header-nav > a > img {
     height: 49px;
     width: auto;
     position: absolute;
     left: 2rem;
     top: .55rem;
-  }
+}
   
-  .header-nav > ul {
+.header-nav > ul {
     margin: 0;
     padding: 0;
     position: absolute;
     right: 2rem;
     height: 100%;
-  }
+}
   
-  .header-nav > ul > li {
+.header-nav > ul > li {
     display: inline-block;
     height: 100%;
     padding: 0 .4rem 0 .4rem;
-  }
+}
   
-  .header-nav > ul > li > a {
+.header-nav > ul > li > a {
     margin-top: 1.5rem;
     display: inline-block;
-  }
+}
 
-  .header-nav > ul > li > a:link {
+.header-nav > ul > li > a:link {
     color: #fff;
     text-decoration: none;
-  }
+}
   
-  .header-nav > ul > li > a:hover {
+.header-nav > ul > li > a:hover {
     color: #3280da;
     text-decoration: none;
-  }
+}
   
-  .header-nav > ul > li > a:active {
+.header-nav > ul > li > a:active {
     color: #e5e5e5;
     text-decoration: none;
-  }
+}
   
-  .header-nav > ul > li > a:visited {
+.header-nav > ul > li > a:visited {
     color: #fff;
     text-decoration: none;
-  }
+}
 
-  /* social icons navbar */
-  .header-nav > ul > li > a > img {
+/* social icons navbar */
+.header-nav > ul > li > a > img {
     width: 20px;
     height: 20px;
-  }
+    transition: 0.3s;
+}
 
-  .header-nav > ul > li > a > img:hover {
-    rotate: 20deg;
+.header-nav > ul > li > a > img:hover {
     transform: scale(1.5);
-  }
+    transform: rotate(15deg);
+}
 
-  section {
+section {
     min-height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  #sec-1 {
+#sec-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-  }
+}
 
-  #sec-2 {
+#sec-2 {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .rocketLine {
+.rocketLine {
     width: auto;
     height: 427px;
     position: relative;
     left: 13.5rem;
     top: -25rem;
-  }
+}
 
-  h1 {
+h1 {
     color: #fff;
     font-weight: lighter;
     font-size: 5rem;
@@ -122,23 +123,23 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-  }
+}
 
-  h2 {
+h2 {
     color: #fff;
     position: relative;
     bottom: 200px;
-  }
+}
 
-  h3 {
+h3 {
     color: #fff;
     font-size: 1.5vw;
     text-transform: capitalize;
     display: flex;
     justify-content: center;
-  }
+}
 
-  .lower {
+.lower {
     position: relative;
     bottom: 5rem;
     font-size: 15rem;
@@ -149,9 +150,9 @@ body {
     -0.025em -0.05em 0 rgba(0,255,0,0.40),
     0.025em 0.05em 0 rgba(0,0,255,0.40);
     animation: lower 1500ms infinite;
-  }
+}
 
-  @keyframes lower {
+@keyframes lower {
     0% {
       text-shadow: 0.05em 0 0 rgba(255,0,0,0.40),
       -0.05em -0.025em 0 rgba(0,255,0,0.40),
@@ -186,14 +187,14 @@ body {
       text-shadow: -0.025em 0 0 rgba(255,0,0,0.40),
       -0.025em -0.025em 0 rgba(0,255,0,0.40),
       -0.025em -0.05em 0 rgba(0,0,255,0.40);
-    }
   }
+}
 
-  .screenshot {
+.screenshot {
     width: 50%;
-  }
+ }
 
-  footer {
+footer {
     width: 100%;
     height: auto;
     background-color: grey;
@@ -203,9 +204,9 @@ body {
     justify-content: center;
     gap: 15%;
     padding: 1rem;
-  }
+}
 
-  .card {
+.card {
     width: 300px;
     height: auto;
     background-color: #2e2e2e;
@@ -217,20 +218,20 @@ body {
     text-align: center;
     padding: 0 0 5px 0;
     box-shadow: 0 0 10px 2px #2e2e2e;
-  }
+}
 
-  .card > img {
+.card > img {
     width: 100%;
     height: auto;
-  }
+}
 
-  .card > p {
+.card > p {
     text-align: center;
     padding: 0 5px 0 5px;
     font-size: 0.8rem;
-  }
+}
 
-  button {
+button {
     width: 80px;
     height: auto;
     background-color: #3280da;
@@ -238,19 +239,19 @@ body {
     border-radius: 5px;
     margin: 0 auto;
     padding: 5px;
-  }
+}
 
-  button:hover {
+button:hover {
     background-color: yellow;
-  }
+}
 
-  button > a {
+button > a {
     text-decoration: none;
-  }
+}
 
   /* === scroll down button === */
 
-  .down {
+.down {
     height: 50px;
     width: 30px;
     border: 3px solid #fff;
@@ -258,10 +259,10 @@ body {
     bottom: 200px;
     border-radius: 20px;
     cursor: pointer;
-  }
+}
 
-  .down::before,
-  .down::after {
+.down::before,
+.down::after {
     content: '';
     position: absolute;
     top: 20%;
@@ -273,13 +274,13 @@ body {
     border-top: transparent;
     border-left: transparent;
     animation: down 1s ease-in-out infinite;
-  }
+}
 
-  .down::after {
+.down::after {
     top: 30%;
-  }
+}
 
-  @keyframes down {
+@keyframes down {
     0% {
       opacity: 0;
     }
@@ -292,5 +293,5 @@ body {
     100% {
       opacity: 0;
       top: 90%;
-    }
   }
+}
