@@ -144,6 +144,48 @@ body {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 10px;
+    text-shadow: 0.05em 0 0 rgba(255,0,0,0.40),
+    -0.025em -0.05em 0 rgba(0,255,0,0.40),
+    0.025em 0.05em 0 rgba(0,0,255,0.40);
+    animation: lower 1500ms infinite;
+  }
+
+  @keyframes lower {
+    0% {
+      text-shadow: 0.05em 0 0 rgba(255,0,0,0.40),
+      -0.05em -0.025em 0 rgba(0,255,0,0.40),
+      -0.025em 0.05em 0 rgba(0,0,255,0.40);
+    }
+    14% {
+      text-shadow: 0.05em 0 0 rgba(255,0,0,0.40),
+      -0.05em -0.025em 0 rgba(0,255,0,0.40),
+      -0.025em 0.05em 0 rgba(0,0,255,0.40);
+    }
+    15% {
+      text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.40),
+      0.025em 0.025em 0 rgba(0,255,0,0.40),
+      -0.05em -0.05em 0 rgba(0,0,255,0.40);
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 rgba(255,0,0,0.40),
+      0.025em 0.025em 0 rgba(0,255,0,0.40),
+      -0.05em -0.05em 0 rgba(0,0,255,0.40);
+    }
+    50% {
+      text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.40),
+      0.05em 0 0 rgba(0,255,0,0.40),
+      0 -0.05em 0 rgba(0,0,255,0.40);
+    }
+    99% {
+      text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.40),
+      0.05em 0 0 rgba(0,255,0,0.40),
+      0 -0.05em 0 rgba(0,0,255,0.40);
+    }
+    100% {
+      text-shadow: -0.025em 0 0 rgba(255,0,0,0.40),
+      -0.025em -0.025em 0 rgba(0,255,0,0.40),
+      -0.025em -0.05em 0 rgba(0,0,255,0.40);
+    }
   }
 
   .screenshot {
