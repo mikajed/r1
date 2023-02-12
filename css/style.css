@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'JetBrains Mono', 'Arial', sans-serif;
@@ -77,6 +81,7 @@ body {
 
   .header-nav > ul > li > a > img:hover {
     rotate: 20deg;
+    transform: scale(1.5);
   }
 
   section {
@@ -209,7 +214,7 @@ body {
     position: absolute;
     bottom: 200px;
     border-radius: 20px;
-    cursor: crosshair;
+    cursor: pointer;
   }
 
   .down::before,
